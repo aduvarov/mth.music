@@ -12,6 +12,7 @@
         <meta name="msapplication-TileColor" content="#1e5a32" />
         <meta name="theme-color" content="#1e5a32" />
         <link rel="stylesheet" href="./css/index.css" />
+        <script src="./js/index.js" defer></script>
         <title>METHED.MUSIC - музыка для вас</title>
     </head>
     <body>
@@ -55,7 +56,7 @@
             <h2 class="visually-hidden">Список треков</h2>
 
             <div class="catalog__container">
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/The Weeknd - Save Your Tears.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -71,7 +72,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track track_active">
+                <button class="catalog__item track track_active" data-track="audio/Imagine Dragons - Follow You.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -87,23 +88,23 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Tove Lo - How Long.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
                             src="./img/photo3.jpg"
-                            alt="How Long - Dirt Femme"
+                            alt="Tove Lo - Dirt Femme"
                             width="180"
                             height="180"
                         />
                     </div>
                     <div class="track__info track-info">
                         <p class="track-info__title">Dirt Femme</p>
-                        <p class="track-info__artist">How Long</p>
+                        <p class="track-info__artist">Tove Lo</p>
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Tom Odell - Another Love.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -119,7 +120,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Lana Del Rey - Born To Die.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -135,7 +136,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Adele - Hello.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -151,7 +152,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Tom Odell - Can't Pretend.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -167,7 +168,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Lana Del Rey - Young And Beautiful.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -183,7 +184,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Adele - Someone Like You.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -199,7 +200,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Imagine Dragons - Natural.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -215,7 +216,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Drake - Laugh Now Cry Later.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -231,7 +232,7 @@
                     </div>
                 </button>
 
-                <button class="catalog__item track">
+                <button class="catalog__item track" data-track="audio/Madonna - Frozen.mp3">
                     <div class="track__img-wrap">
                         <img
                             class="track__poster"
@@ -261,19 +262,19 @@
                 </button>
             </div>
         </section>
-        <section class="player player_active">
+        <section class="player">
             <h2 class="visually-hidden">Плеер</h2>
             <div class="player__container">
-                <div class="player__track-info track-info">
+                <div class="player__track-info track-info track-info_mobile-center">
                     <p class="track-info__title">Save your tears</p>
                     <p class="track-info__artist">The Weeknd</p>
                 </div>
                 <div class="player_controller">
-                    <button class="player__icon player__icon_stop"></button>
-                    <button class="player__icon player__icon_prev"></button>
-                    <button class="player__icon player__icon_pause"></button>
-                    <button class="player__icon player__icon_next"></button>
-                    <button class="player__icon player__icon_like"></button>
+                    <button class="player__icon player__icon_stop player__controller-stop"></button>
+                    <button class="player__icon player__icon_prev player__controller-prev"></button>
+                    <button class="player__icon player__icon_pause player__controller-pause"></button>
+                    <button class="player__icon player__icon_next player__controller-next"></button>
+                    <button class="player__icon player__icon_like player__controller-like"></button>
                 </div>
                 <div class="player__progress-wrap">
                     <div class="player__progress">
