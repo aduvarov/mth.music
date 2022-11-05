@@ -70,6 +70,10 @@
     transition-property: background-color;
 }
 
+.track_pause .track__img-wrap::after {
+    background-image: url('../img/play.svg');
+}
+
 .track_active:hover .track__img-wrap::after {
     background-color: #fff;
 }
